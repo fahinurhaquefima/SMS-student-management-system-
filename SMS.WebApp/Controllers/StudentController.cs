@@ -70,7 +70,7 @@ namespace SMS.WebApp.Controllers
             }
             return RedirectToAction("Index");
         }
-
+        [HttpGet ]
         public async Task<IActionResult> Deatils(int id)
         {
             var data = await _dbContest.Set<Student>().FindAsync(id);
